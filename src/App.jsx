@@ -1,3 +1,8 @@
+import React from "react";
+import MyHello from "./MyHello";
+import EventBasic from "./EventBasic";
+import StateBasic from "./StateBasic";
+
 function Header() {
   return <h2>ヘッダーです</h2>;
 }
@@ -43,6 +48,17 @@ export default function App() {
       <a href={dest + (isDocs ? "/docs" : "")}>React本家サイト</a>
 
       <p style={props}>プロジェクト</p>
+
+      <h1>Propsの勉強会</h1>
+
+      <MyHello myName="鈴木" />
+      <MyHello myName="佐藤" />
+      <MyHello myName="田中" />
+
+      <h1>イベント処理の基本</h1>
+      <EventBasic type="time" />
+
+      <StateBasic init={0} />
     </>
   );
 }
