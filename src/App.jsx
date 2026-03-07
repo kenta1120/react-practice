@@ -2,6 +2,9 @@ import React from "react";
 import MyHello from "./MyHello";
 import EventBasic from "./EventBasic";
 import StateBasic from "./StateBasic";
+import ForList from "./ForList";
+import books from "./books";
+import ForNest from './ForNest';
 
 function Header() {
   return <h2>ヘッダーです</h2>;
@@ -59,6 +62,11 @@ export default function App() {
       <EventBasic type="time" />
 
       <StateBasic init={0} />
+
+      <h1>本一覧</h1>
+
+      <ForList src={books} />
+      <ForNest src={books} />
     </>
   );
 }
