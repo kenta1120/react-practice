@@ -5,6 +5,8 @@ import StateBasic from "./StateBasic";
 import ForList from "./ForList";
 import books from "./books";
 import ForNest from './ForNest';
+import ForFilter from "./ForFilter";
+import ForSort from "./ForSort";
 
 function Header() {
   return <h2>ヘッダーです</h2>;
@@ -67,6 +69,12 @@ export default function App() {
 
       <ForList src={books} />
       <ForNest src={books} />
+
+      <h1>安い本一覧</h1>
+      <ForFilter src={books} />
+
+      <h1>価格順の本一覧</h1>
+      <ForSort src={books} />
     </>
   );
 }
